@@ -2,6 +2,11 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: cupcake --default;
+}
 
 *,
 *::before,

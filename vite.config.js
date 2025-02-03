@@ -1,5 +1,7 @@
+
+import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
-import { fileURLToPath, URL } from 'node:url'
+import path from 'path'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { defineConfig, loadEnv } from 'vite'
 import viteCompression from 'vite-plugin-compression'
@@ -8,15 +10,16 @@ import { wrapperEnv } from './src/build/utils'
 
 // https://vitejs.dev/config/
 export default defineConfig((mode) => {
+
   // Your code here
   const env = loadEnv(mode, process.cwd())
   const viteEnv = wrapperEnv(env)
   const { VITE_PORT, VITE_PUBLIC_PATH } = viteEnv
-
   return {
-
     plugins: [
       vue(),
+      tailwindcss(),
+
       viteCompression({
         deleteOriginFile: false, // 压缩后是否删除源文件
       }),
@@ -31,7 +34,7 @@ export default defineConfig((mode) => {
     base: VITE_PUBLIC_PATH || '/',
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
+        '@': path.resolve(__dirname, 'src'), // Ensure 'src' is the correct directory
       },
       // 导入文件时省略的扩展名列表
       extensions: [
