@@ -14,11 +14,11 @@ dist/
 *.cache
 
 # -------------------------------------
-# Environment Variables
+# Environment Variables (DO NOT COMMIT)
 # -------------------------------------
 .env
-.env.*        # Covers .env.development, .env.production, etc.
-!.env.example # Allow safe template for sharing
+.env.*        # Includes .env.local, .env.development, etc.
+!.env.example # Only commit safe, public template
 
 # -------------------------------------
 # Editor & System Files
