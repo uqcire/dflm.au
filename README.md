@@ -24,8 +24,8 @@
 
 ## 📬 联系方式
 
-- 官方邮箱：hello@dfgarlic.com.au
-- 微信号：好蒜道DFLM
+- 官方邮箱：hello@dflm.com.au
+- 微信号：好蒜道
 - 品牌官网：[www.dflm.com.au](https://www.dflm.com.au)（建设中）
 
 ---
