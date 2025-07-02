@@ -11,7 +11,11 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "cz": "czg"
+    "cz": "czg",
+    "git:status": "git status",
+    "git:quick": "node scripts/quick-commit.js",
+    "git:push": "git push origin main",
+    "deploy": "pnpm run build && git add dist && git commit -m 'chore: update build' && git push"
   },
   "dependencies": {
     "axios": "^1.10.0",
@@ -35,6 +39,7 @@
     "eslint-plugin-format": "^1.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
+    "readline-sync": "^1.4.10",
     "rollup-plugin-visualizer": "^5.14.0",
     "tailwindcss": "^4.1.10",
     "unplugin-auto-import": "^19.3.0",
