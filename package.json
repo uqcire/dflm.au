@@ -38,6 +38,7 @@
     "rollup-plugin-visualizer": "^5.14.0",
     "tailwindcss": "^4.1.10",
     "unplugin-auto-import": "^19.3.0",
+    "unplugin-icons": "^22.1.0",
     "unplugin-vue-components": "^28.7.0",
     "vite-plugin-compression": "^0.5.1"
   },

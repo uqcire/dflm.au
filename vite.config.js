@@ -3,6 +3,9 @@ import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { visualizer } from 'rollup-plugin-visualizer'
+import IconsResolver from 'unplugin-icons/resolver'
+import Icons from 'unplugin-icons/vite'
+import Components from 'unplugin-vue-components/vite'
 import { defineConfig, loadEnv } from 'vite'
 import viteCompression from 'vite-plugin-compression'
 import { wrapperEnv } from './src/build/utils'
@@ -19,7 +22,17 @@ export default defineConfig((mode) => {
     plugins: [
       vue(),
       tailwindcss(),
-
+      Icons(
+        {
+          // experimental
+          autoInstall: true,
+        }
+      ),
+      Components({
+        resolvers: [
+          IconsResolver(),
+        ],
+      }),
       viteCompression({
         deleteOriginFile: false, // 压缩后是否删除源文件
       }),

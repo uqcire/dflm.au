@@ -1,0 +1,18 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        pilar: ["pilar-pro", ...fontFamily.sans],
+      },
+    },
+  },
+  plugins: [
+    require('daisyui'),
+  ],
+}
