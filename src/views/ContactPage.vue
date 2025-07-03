@@ -1,3 +1,9 @@
+<script setup>
+import GarlicPickle from '@/assets/product__garlic--pickle.png';
+import SauceRoast from '@/assets/product__sauce--garlic--roast.png';
+import SauceUmami from '@/assets/product__sauce--garlic--umami.png';
+</script>
+
 <template>
   <div class="relative min-h-screen overflow-hidden bg-[#ED6C2B] text-[#FDF9E6]">
     <!-- Yellow Background Shape -->
@@ -44,25 +50,19 @@
       <!-- Right Column: Floating Products -->
       <div>
         <div class="absolute top-[12vh] right-[36.5rem]">
-          <img :src="PickleGarlic" alt="Pickle Garlic" class="w-[28rem] -rotate-24" />
+          <img :src="GarlicPickle" alt="Pickle Garlic" class="w-[28rem] -rotate-24" />
         </div>
         <div class=" absolute top-[40vh] right-[28.5rem]">
-          <img :src="RoastSauce" alt="Roast Garlic Sauce" class="w-[26rem] rotate-16" />
+          <img :src="SauceRoast" alt="Roast Garlic Sauce" class="w-[26rem] rotate-16" />
         </div>
         <div class="absolute right-[12.5rem]">
-          <img :src="UmamiSauce" alt="Umami Sauce" class="w-[36rem] rotate-8" />
+          <img :src="SauceUmami" alt="Umami Sauce" class="w-[36rem] rotate-8" />
         </div>
       </div>
 
     </main>
   </div>
 </template>
-
-<script setup>
-import RoastSauce from '@/assets/garlic-sauce__roast.png';
-import UmamiSauce from '@/assets/garlic-sauce__umami.png';
-import PickleGarlic from '@/assets/garlic__pickle.png';
-</script>
 
 <style scoped>
 /* Using a more specific font could improve the look, but sticking to font-sans for now. */

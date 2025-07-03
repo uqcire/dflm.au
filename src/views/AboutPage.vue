@@ -1,11 +1,11 @@
 <script setup>
-import Garlic1 from '@/assets/about-page__garlic-1.png';
-import Garlic2 from '@/assets/about-page__garlic-2.png';
-import Garlic3 from '@/assets/about-page__garlic-clove-1.png';
-import Garlic4 from '@/assets/about-page__garlic-clove-2.png';
-import Pickles from '@/assets/about__garlic--pickle.png';
-import Umami from '@/assets/about__garlic-sauce--umami.png';
-import Sauces from '@/assets/garlic-sauce__combined.png';
+import SaucesCombo from '@/assets/product__sauce--garlic--combo-lineup.png';
+import CompanyFactory from '@/assets/visual__brand--company-factory.png';
+import CompanyOffice from '@/assets/visual__brand--company-offices.png';
+import GarlicWhole2 from '@/assets/visual__garlic--purple--watercolor-2.png';
+import GarlicWhole from '@/assets/visual__garlic--purple--watercolor.png';
+import GarlicClove2 from '@/assets/visual__garlic-clove--purple--watercolor-2.png';
+import GarlicClove from '@/assets/visual__garlic-clove--purple--watercolor.png';
 </script>
 
 <template>
@@ -32,27 +32,27 @@ import Sauces from '@/assets/garlic-sauce__combined.png';
       <div class="absolute right-[38vw] top-[50vh] z-30 w-[10vw] max-w-[200px] rotate-35">
 
         <div class="w-64">
-          <img :src="Garlic1" alt="Garlic" class="w-full h-full object-contain drop-shadow-2xl/50" />
+          <img :src="GarlicWhole" alt="Garlic" class="w-full h-full object-contain drop-shadow-2xl/50" />
         </div>
       </div>
       <div class="absolute right-[25vw] top-[40vh] z-30 w-[10vw] max-w-[200px] -rotate-35">
         <div class="w-64">
-          <img :src="Garlic2" alt="Garlic" class="w-full h-full object-contain drop-shadow-2xl/50" />
+          <img :src="GarlicWhole2" alt="Garlic" class="w-full h-full object-contain drop-shadow-2xl/50" />
         </div>
       </div>
       <div class="absolute right-[10vw] top-[70vh] z-30">
         <div class="w-32">
-          <img :src="Garlic3" alt="Garlic" class="w-full h-full object-contain drop-shadow-lg/50" />
+          <img :src="GarlicClove" alt="Garlic" class="w-full h-full object-contain drop-shadow-lg/50" />
         </div>
       </div>
       <div class="absolute right-[15vw] top-[70vh] z-30 w-[10vw] max-w-[200px] -rotate-35 ">
         <div class="w-32">
-          <img :src="Garlic4" alt="Garlic" class="w-full h-full object-contain drop-shadow-lg/50" />
+          <img :src="GarlicClove2" alt="Garlic" class="w-full h-full object-contain drop-shadow-lg/50" />
         </div>
       </div>
       <div class="absolute right-[8vw] top-[80vh] z-30 rotate-180">
         <div class="w-32">
-          <img :src="Garlic3" alt="Garlic" class="w-full h-full object-contain drop-shadow-lg/50" />
+          <img :src="GarlicClove" alt="Garlic" class="w-full h-full object-contain drop-shadow-lg/50" />
         </div>
       </div>
 
@@ -66,44 +66,49 @@ import Sauces from '@/assets/garlic-sauce__combined.png';
   <section class="relative mx-auto p-12 pb-12">
     <div class="flex flex-col gap-12">
       <h2 class="font-black text-8xl font-basic text-[#7F0506] leading-tight pl-64">
-        A Spoonful of Garlic, No Nonsense. All Yum.
+        A Global Leader in Garlic, Rooted in Quality and Trust
       </h2>
       <div class="flex">
         <!-- 左侧图片容器 -->
-        <div class="relative w-[50%] flex items-center justify-center pb-48">
+        <div class="relative w-[50%] flex items-center justify-center pb-24">
           <!-- 叠加的图片 -->
-          <img :src="Umami" alt="Umami Garlic Sauce" class="w-auto h-[60vh] object-contain" />
+          <img :src="CompanyOffice" alt="E Sunrise Group" class="w-auto h-[90vh] object-contain" />
         </div>
 
         <!-- 右侧文字 -->
         <div class="flex flex-col gap-4 w-[36rem]">
-          <div class="font-bold text-[#7F0506] text-2xl">We make garlic that's real, clean, and ready when you are. ♡
-          </div>
           <div class="flex flex-col gap-4 font-bold font-basic text-lg text-[#7F0506]">
             <p>
-              Haosuandao is a garlic-focused condiment brand developed by Jiangsu Liming Food Group, one of China's
-              leading agricultural enterprises with over 20 years of experience in garlic production and processing.
+              Founded in 2002, Jiangsu Dongfang Liming Group is a leading agricultural enterprise specializing in garlic
+              production, deep processing, and global export. With over two decades of experience, the group has
+              established operations in more than 60 countries and built a fully integrated supply chain that spans
+              farming, R&D, manufacturing, and international trade.
             </p>
             <p>
-              We are committed to real ingredients and honest flavor. Each jar is made with authentic garlic and
-              contains no added preservatives, colorants, or artificial flavors. Our mission is to offer a healthier and
-              more convenient way to enjoy the richness of garlic in everyday meals.
+              The company owns 110,000 acres of certified garlic farmland and operates multiple production facilities
+              that
+              meet the highest food safety standards, including HACCP, ISO9001, FSSC, and BRC. Its product range covers
+              fresh garlic, black garlic, garlic paste, dehydrated slices and powders, and ready-to-use condiments.
             </p>
             <p>
-              Supported by the supply chain strength and strict quality standards of Liming Group, Haosuandao combines
-              traditional garlic craftsmanship with the needs of modern kitchens. Whether it's a quick solo dish or a
-              shared dinner, we believe every spoonful of flavor should feel natural, effortless, and full of heart.
+              As a trusted partner to major food brands and retailers worldwide, Dongfang Liming Group is committed to
+              delivering clean, safe, and consistent quality at scale. With a growing presence in Southeast Asia,
+              Europe,
+              and now Australia, the company continues to expand its reach — powered by integrity, innovation, and a
+              deep
+              respect for what good food should be.
             </p>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
+
   </section>
   <!-- Section 3: Photos -->
   <!-- Blob Overlays -->
   <div class="relative w-full h-0 z-20 overflow-visible" style="margin-top: -15vh;">
-    <img :src="Sauces" alt="Garlic Sauces Set" class="absolute right-[15vw] top-[-5vh] w-[50vw]" />
+    <img :src="SaucesCombo" alt="Garlic Sauces Set" class="absolute right-[2vw] top-[-5vh] w-[55vw]" />
   </div>
   <section
     class="relative w-full min-h-[60vh] overflow-hidden bg-[#ED6C2B] flex flex-col justify-center items-center py-16">
@@ -121,38 +126,35 @@ import Sauces from '@/assets/garlic-sauce__combined.png';
   <section class="relative mx-auto p-12 pt-24">
     <div class="flex flex-col gap-12">
       <h2 class="font-black text-8xl font-basic text-[#7F0506] leading-tight pl-96">
-        A Spoonful of Garlic, No Nonsense. All Yum.
+        From Seed to Shelf, We Grow with Purpose
       </h2>
       <div class="flex">
         <!-- 左侧文字 -->
         <div class="flex flex-col gap-4 pl-64 w-[48rem]">
-          <div class="font-bold text-[#7F0506] text-2xl">We make garlic that's real, clean, and ready when you are. ♡
-          </div>
           <div class="flex flex-col gap-4 font-bold font-basic text-lg text-[#7F0506]">
             <p>
-              Haosuandao is a garlic-focused condiment brand developed by Jiangsu Liming Food Group, one of China's
-              leading agricultural enterprises with over 20 years of experience in garlic production and processing.
+              At Dongfang Liming Group, we believe that great products start long before the jar is sealed. They begin
+              with the soil, the seed, the people, and a promise to do things right. That’s why we invest in sustainable
+              farming, technology-driven traceability, and deep relationships with growers and partners.
             </p>
             <p>
-              We are committed to real ingredients and honest flavor. Each jar is made with authentic garlic and
-              contains no added preservatives, colorants, or artificial flavors. Our mission is to offer a healthier and
-              more convenient way to enjoy the richness of garlic in everyday meals.
+              Our mission is not just to supply garlic — it is to raise the standard for what safe, honest, and scalable
+              agricultural production should look like. We work closely with universities, research institutions, and
+              international buyers to push quality forward, from field to shelf.
             </p>
             <p>
-              Supported by the supply chain strength and strict quality standards of Liming Group, Haosuandao combines
-              traditional garlic craftsmanship with the needs of modern kitchens. Whether it's a quick solo dish or a
-              shared dinner, we believe every spoonful of flavor should feel natural, effortless, and full of heart.
+              As we expand into new markets, we are committed to growing responsibly, delivering not only products, but
+              trust. Every clove we ship carries the values we stand for: care, consistency, and a long-term view of
+              food as a global connector.
             </p>
           </div>
         </div>
-
         <!-- 右侧照片容器 -->
-        <div class="relative w-[50%] flex items-center justify-center pb-48">
+        <div class="relative w-[50%] flex items-center justify-center">
           <!-- 叠加的图片 -->
-          <img :src="Pickles" alt="Pickle Garlic" class="w-auto h-[60vh] object-contain" />
+          <img :src="CompanyFactory" alt="Company Factory" class="w-auto h-[60vh] object-contain" />
         </div>
       </div>
-
     </div>
   </section>
 </template>

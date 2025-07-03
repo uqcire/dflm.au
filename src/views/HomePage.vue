@@ -1,7 +1,7 @@
 <script setup>
-import Umami from '@/assets/about__garlic-sauce--umami.png';
-import Figure from '@/assets/cartoon-figure.png';
-import Sauces from '@/assets/garlic-sauce__combined.png';
+import Figure from '@/assets/brand__character--haosuandao--mascot.png';
+import SaucesCombo from '@/assets/product__sauce--garlic--combo-lineup.png';
+import SauceDishes from '@/assets/visual__dishes--garlic-sauce-application.png';
 </script>
 
 <template>
@@ -17,39 +17,35 @@ import Sauces from '@/assets/garlic-sauce__combined.png';
         transform="translate(700 1100) scale(24,24)" />
     </svg>
     <!-- 主标题 -->
-    <div class="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-12">
-      <h1 class="font-black font-basic text-[6vw] leading-[0.95] text-[#7F0506] drop-shadow-lg">
-        Real garlic<br>
-        Big flavor<br>
-        Zero nonsense
+    <div class="absolute left-0 top-7/14 -translate-y-1/2 z-10 p-12">
+      <h1 class="font-black font-basic text-[7vw] leading-[0.95] text-[#7F0506] drop-shadow-lg">
+        <span class="text-[9vw]">Real garlic</span><br>
+        <span class="text-[9vw]">Big flavor</span><br>
+        <span>Zero nonsense</span>
       </h1>
     </div>
 
-    <!-- 左下角角副标题 -->
-    <div class="absolute left-0 bottom-1/16 z-20 p-12">
-      <div class="text-[#7F0506] font-black text-4xl font-basic leading-tight">
+    <!-- 右边副标题 -->
+    <div class="absolute right-1/30 top-2/10 z-20 p-8 w-[24vw]">
+      <div class="text-[#7F0506] font-black text-5xl font-basic leading-tight drop-shadow-lg">
         No additives. <br>
         No shortcuts. <br>
         Just one spoon of bold, honest flavor, ready when you are.
       </div>
     </div>
 
-    <!-- 右上角次要信息 -->
-    <div class="absolute right-24 bottom-24 z-20 text-[#7F0506] font-black text-2xl font-basic w-[40vw]">
+    <!-- 左下角次要信息 -->
+    <div
+      class="absolute left-0 bottom-16 z-20 text-[#7F0506] font-black text-2xl font-basic w-[46vw] drop-shadow-lg p-12">
       With over 20 years of garlic expertise and a clean-label commitment, Haosuandao brings you flavor that's easy to
       use, full of taste, and made to brighten everyday cooking. One spoon at a time. <span
         class="inline-block">♡</span>
     </div>
 
     <!--  人物插画（用你的图片或 SVG 替换） -->
-    <div class="absolute right-1/6 top-1/3 -translate-x-1/2 -translate-y-1/2 z-10 w-[32vw] max-w-[420px]">
-      <img :src="Figure" alt="Hero Illustration" class="w-full h-auto object-contain" />
+    <div class="absolute right-0 top-5/10 -translate-x-1/8 -translate-y-9/20 z-10">
+      <img :src="Figure" alt="Hero Illustration" class="w-[48vw] h-auto object-contain" />
     </div>
-
-    杯子插画（可选，左下角） -->
-    <!-- <div class="absolute left-48 bottom-48 z-20 w-32">
-      <img src="@/assets/your-glass-illustration.png" alt="Glass" class="w-full h-auto object-contain" />
-    </div> -->
   </section>
 
   <!-- Section 2: Company Information -->
@@ -62,7 +58,7 @@ import Sauces from '@/assets/garlic-sauce__combined.png';
         <!-- 左侧图片容器 -->
         <div class="relative w-[50%] flex items-center justify-center pb-48">
           <!-- 叠加的图片 -->
-          <img :src="Umami" alt="Umami Garlic Sauce" class="w-auto h-[60vh] object-contain" />
+          <img :src="SaucesCombo" alt="Garlic Sauces Set" class="w-auto h-[60vh] object-contain" />
         </div>
 
         <!-- 右侧文字 -->
@@ -93,7 +89,7 @@ import Sauces from '@/assets/garlic-sauce__combined.png';
   <!-- Section 3: Photos -->
   <!-- Blob Overlays -->
   <div class="relative w-full h-0 z-20 overflow-visible" style="margin-top: -15vh;">
-    <img :src="Sauces" alt="Garlic Sauces Set" class="absolute right-[15vw] top-[-5vh] w-[50vw]" />
+    <img :src="SauceDishes" alt="Garlic Sauces Dishes Application" class="absolute -right-[6vw] w-[60vw]" />
   </div>
   <section
     class="relative w-full min-h-[60vh] overflow-hidden bg-[#ED6C2B] flex flex-col justify-center items-center py-16">

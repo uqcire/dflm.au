@@ -18,6 +18,8 @@
             We craft every jar with real garlic, zero additives, and decades of dedication to good food. Whether you're
             cooking for yourself or sharing a meal with others, we're here to help you bring depth, ease, and heart to
             every dish.</p>
+          <div class="w-78">
+          </div>
         </div>
         <!-- Middle Links -->
         <div class="flex flex-col gap-4">
@@ -72,5 +74,5 @@
 </template>
 
 <script setup>
-// No script needed for this component for now.
+
 </script>
