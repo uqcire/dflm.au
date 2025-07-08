@@ -1,18 +1,35 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const { createTailwindConfig } = require('@shared/tailwind-config')
+const { dflmPreset } = require('@shared/tailwind-config/presets')
+const { dflmTheme } = require('@shared/tailwind-config/themes')
 
-module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      fontFamily: {
-        pilar: ["pilar-pro", ...fontFamily.sans],
-      },
+module.exports = createTailwindConfig({
+  daisyui: true,
+  extend: {
+    ...dflmPreset,
+    daisyui: {
+      themes: [
+        "light",
+        "dark",
+        "cupcake",
+        "emerald",
+        "corporate",
+        "retro",
+        "garden",
+        "forest",
+        "lofi",
+        "pastel",
+        "fantasy",
+        "wireframe",
+        "luxury",
+        "business",
+        "autumn",
+        "coffee",
+        "winter",
+        "dim",
+        "nord",
+        "sunset",
+        dflmTheme["dflm-brand"],
+      ],
     },
   },
-  plugins: [
-    require('daisyui'),
-  ],
-}
+})
